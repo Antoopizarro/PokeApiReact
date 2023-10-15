@@ -1,9 +1,9 @@
-import React, {useContext} from 'react'
-import { PokemonContext } from '../context/PokemonContext'
+import React, {useContext} from 'react';
+import { PokemonContext } from '../context/PokemonContext';
 
 export const FilterBar = () => {
 
-    const active = useContext(PokemonContext)
+    const {active, handleCheckbox} = useContext(PokemonContext)
 
   return (
     <div className={`container-filters ${active ? 'active': ''}`}>
